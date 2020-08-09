@@ -480,5 +480,15 @@
 	<search-pattern><![CDATA[expreg: data-big-photo="([^"]+)"]]></search-pattern>
 	<interceptor>replace: '_\d+\.(jpg|png|gif)', '_1280.$1'</interceptor>
 </host>
-
+<host id="Hqbabes">
+  <domain>
+  www.hqbabes.com
+  </domain>
+  <path-pattern>
+  <![CDATA[c.xme.net/.*\.(jpg|png|gif)]]>
+  </path-pattern>
+  <search-pattern>
+  <![CDATA[expreg: a href=".+(c\.xme\.net.+)"]]>
+  </search-pattern>
+</host>
 </root>
